@@ -1,10 +1,317 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+.swiper-container {
+width:inherit;
+height: inherit;
+/*padding: 40px !important;*/
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+--swiper-navigation-size: 20px !important;
+}
+
+.swiper-slide .slider__images img{
+width: 300px;
+object-fit: cover;
+height: 300px;
+}
+
+@media screen and (min-width: 900px) {
+.swiper-button-next,
+.swiper-button-prev {
+--swiper-navigation-size: 30px !important;
+}
+}
+</style>
+<link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="./emeka-page.css">
+
+</head>
+<body>
+<header id="page-header">
+<div id="hamburger-icon" class="hide">
+    <img src="./menu.png">
+</div>
+<div id="logo-icon">
+    <span id="E-logo">E</span> - <span id="G-logo">G</span>raphi<span id="C-logo">c</span>
+</div>
+<div class="desk-menu show">
+<ul>
+<li class="active">Home</li>
+<li>Services</li>
+<li>Our Works</li>
+<li>Contact Us</li>
+<li>About Us</li>
+</ul>
+</div>
+<div id="search-icon">
+    <img src="./images/search.png">
+</div>
+</header>
+
+
+<!--*************SLIDER************** -->
+<div id="slider">
+    <div class="swiper-container">
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+        <div class="slider__images">
+        <!-- <img src="./images/emeka.jpg">             -->
+        </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="slider__images">
+        <!-- <img src="./images/emeka2.jpg"> -->
+    </div>
+    </div>
+    <div class="swiper-slide">
+        <div class="slider__images">
+        <!-- <img src="./images/emeka3.jpg"> -->
+    </div>
+    </div>
+    ...
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <div class="swiper-scrollbar"></div>
+</div>
+</div>
+<!--*************SLIDER************** -->
+
+<!--**************TITLE************* -->
+<div id="title">
+<h1>OUR SERVICES</h1>   
+
+<div id="content-main">
+    <div class="content-main-sub">
+        <div class="content-main-icons">
+            <img src="./images/web.png">
+        </div>
+        <h4 class="content-main-titles">Website Design</h4>
+        <div class="content-main-descs">
+            We at E-Graphics Offer Standard Enterprise,Corporate Solutions and Services.
+        </div>
+    </div>
+
+    <div class="content-main-sub">
+        <div class="content-main-icons">
+            <img src="./images/software.png">
+        </div>
+        <h4 class="content-main-titles">Software Development</h4>
+        <div class="content-main-descs">
+            Contrary to popular belief, We at E-Graphics Offer Standard Corporate Solutions and Services.
+        </div>
+    </div>
+
+
+    <div class="content-main-sub">
+        <div class="content-main-icons">
+            <img src="./images/cloud_development.svg">
+        </div>
+        <h4 class="content-main-titles">Cloud Development</h4>
+        <div class="content-main-descs">
+            Contrary to popular belief, We at E-Graphics Offer Standard Corporate Solutions and Services.
+        </div>
+    </div>
+</div>
+
+<div id="content-main">
+    <div class="content-main-sub">
+        <div class="content-main-icons">
+            <img src="./images/mobile.png">
+        </div>
+        <h4 class="content-main-titles">Mobile Development</h4>
+        <div class="content-main-descs">
+            We at E-Graphics Offer Standard Enterprise,Corporate Solutions and Services.
+        </div>
+    </div>
+
+    <div class="content-main-sub">
+        <div class="content-main-icons">
+            <img src="./images/windows.svg">
+        </div>
+        <h4 class="content-main-titles">Desktop Development</h4>
+        <div class="content-main-descs">
+            Contrary to popular belief, We at E-Graphics Offer Standard Corporate Solutions and Services.
+        </div>
+    </div>
+
+
+    <div class="content-main-sub">
+        <div class="content-main-icons">
+            <img src="./images/database.svg">
+        </div>
+        <h4 class="content-main-titles">Database Management</h4>
+        <div class="content-main-descs">
+            Contrary to popular belief, We at E-Graphics Offer Standard Corporate Solutions and Services.
+        </div>
+    </div>
+</div>
+</div>
+<!--**************TITLE************* -->
+
+<!--**************MORE SERVICES************* -->
+<div class="see-more-services">
+ <button>
+    Sell All Services 
+<img src="./images/right-arrow.png">
+ </button>
+</div>
+<!--***************MORE SERVICES************ -->
+
+
+<!--**************WHY CHOOSE US*************-->
+<section id="why__choose__us">
+<header><h3>Why Choose Us?</h3></header>
+<section id="why__choose__us__reason">
+    <section class="why__choose__us__reason__section">
+        <section class="reason__section__inner" id="rSection-1">
+            <h3>
+            <div class="reason__section__inner-h3">High Quality<div>
+            <div>Website</div>
+           </h3>
+            <section class="reason__section__desc">We Offer top-notch Website to develop the most efficient apps for our customers</section>
+        </section>
+
+          <section class="reason__section__inner" id="rSection-2">
+            <h3>
+            <div class="reason__section__inner-h3">Dedicated 24\7<div>
+            <div>Support</div>
+           </h3>
+            <section class="reason__section__desc">We Offer top-notch Website to develop the most efficient apps for our customers</section>
+        </section>
+
+
+          <section class="reason__section__inner" id="rSection-3">
+            <h3>
+            <div class="reason__section__inner-h3">30-Day Monkey-back<div>
+            <div>Guarantee</div>
+           </h3>
+            <section class="reason__section__desc">We Offer top-notch Website to develop the most efficient apps for our customers</section>
+        </section>
+     
+    </section>
+   <section class="why__choose__us__reason__section">
+        <section class="reason__section__inner" id="rSection-4">
+            <h3>
+            <div class="reason__section__inner-h3">Agile and Fast<div>
+            <div>Working Style</div>
+           </h3>
+            <section class="reason__section__desc">We Offer top-notch Website to develop the most efficient apps for our customers</section>
+        </section>
+
+          <section class="reason__section__inner" id="rSection-5">
+            <h3>
+            <div class="reason__section__inner-h3">Some Apps<div>
+            <div>are free</div>
+           </h3>
+            <section class="reason__section__desc">We Offer top-notch Website to develop the most efficient apps for our customers</section>
+        </section>
+
+
+          <section class="reason__section__inner" id="rSection-6">
+            <h3>
+            <div class="reason__section__inner-h3">High Level of<div>
+            <div>Usability</div>
+           </h3>
+            <section class="reason__section__desc">We Offer top-notch Website to develop the most efficient apps for our customers</section>
+        </section>
+     
+    </section>
+
+</section>
+</section>
+
+<!--*************WHY CHOOSE US**************-->
+
+<!--*****************5 YEARS EXPERIENCE******************* -->
+<section id="years__experience">
+    <section id="years__number">
+
+        <div id="circle-extra"></div>
+
+        <div id="experience-year">
+            <h1>5</h1>
+            <h2>
+            years<br>
+            Of Experience
+        </h2>
+        </div>
+    </section>
+    <section id="numbers__info">
+        <div class="__info__content">
+            <h2 class="__info__content__1">6</h2>
+            <h3 class="__info__content__2">Apps Developed</h3>
+        </div>
+
+        <div class="__info__content">
+            <h2 class="__info__content__1">5</h2>
+            <h3 class="__info__content__2">Consultans</h3>
+        </div>
+
+
+        <div class="__info__content">
+            <h2 class="__info__content__1">7</h2>
+            <h3 class="__info__content__2">Employers</h3>
+        </div>
+       
+    </section>
+</section>
+<!--*****************5 YEARS EXPERIENCE******************* -->
+
+<!--*******************FOOTER CONTENT******************** -->
+<footer id="footer-content">
+    <div>CONTACT  US</div>
+    <div>MESSAGE US</div>
+<!--*******************FOOTER CONTENT******************** -->
+
+<!--*******************MOBILE SIDEBAR***************** -->
+<div id="mobile-sidebar">
+<div id="close-mob-sidebar" title="close">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" title="close">
+  <circle cx="12" cy="12" r="10" opacity=".35" />
+  <path d="M14.812,16.215L7.785,9.188c-0.384-0.384-0.384-1.008,0-1.392l0.011-0.011c0.384-0.384,1.008-0.384,1.392,0l7.027,7.027c0.384,0.384,0.384,1.008,0,1.392l-0.011,0.011C15.82,16.599,15.196,16.599,14.812,16.215z" />
+  <path d="M7.785,14.812l7.027-7.027c0.384-0.384,1.008-0.384,1.392,0l0.011,0.011c0.384,0.384,0.384,1.008,0,1.392l-7.027,7.027c-0.384,0.384-1.008,0.384-1.392,0l-0.011-0.011C7.401,15.82,7.401,15.196,7.785,14.812z"  />
+</svg>
+</div>
+<div class="mobile-menu">
+<ul>
+<li class="active">Home</li>
+<li>Services</li>
+<li>Our Works</li>
+<li>Contact Us</li>
+<li>About Us</li>
+</ul>
+</div>
+</div>
+<!--*******************MOBILE SIDEBAR***************** -->
+
+<!--***********************SEACH POP-UP*************************** -->
+<div id="search-content">
+<div id="close-search" title="close">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" title="close">
+  <circle cx="12" cy="12" r="10" opacity=".75" />
+  <path d="M14.812,16.215L7.785,9.188c-0.384-0.384-0.384-1.008,0-1.392l0.011-0.011c0.384-0.384,1.008-0.384,1.392,0l7.027,7.027c0.384,0.384,0.384,1.008,0,1.392l-0.011,0.011C15.82,16.599,15.196,16.599,14.812,16.215z" />
+  <path d="M7.785,14.812l7.027-7.027c0.384-0.384,1.008-0.384,1.392,0l0.011,0.011c0.384,0.384,0.384,1.008,0,1.392l-7.027,7.027c-0.384,0.384-1.008,0.384-1.392,0l-0.011-0.011C7.401,15.82,7.401,15.196,7.785,14.812z"  />
+</svg>
+</div>
+<div id="search-content--inner">
+<h1>SEARCH CONTENT COMING SOON...</h1>
+</div>
+</div>
+<!--***********************SEACH POP-UP*************************** -->
+<script src="./swiper/swiper-bundle.min.js"></script>
+<script src="./emeka-page.js"></script>
+</body>
 </html>
+               
